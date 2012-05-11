@@ -4,4 +4,5 @@ require 'motion/project'
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'Tweets'
+  app.provisioning_profile = '/Users/rth/Library/MobileDevice/Provisioning Profiles/24D7E3FB-2D71-4D3E-9809-07ECBE440247.mobileprovision'
 end

@@ -3,8 +3,10 @@ require 'motion/project'
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
+  @iPhone_provision = '/Users/rth/Library/MobileDevice/Provisioning Profiles/036FE82B-C4D9-4033-B892-F66B24F22EF1.mobileprovision'
+  @iPad_provision = '/Users/rth/Library/MobileDevice/Provisioning Profiles/036FE82B-C4D9-4033-B892-F66B24F22EF1.mobileprovision'
   app.name = 'Tweets'
-  app.provisioning_profile = '/Users/rth/Library/MobileDevice/Provisioning Profiles/036FE82B-C4D9-4033-B892-F66B24F22EF1.mobileprovision'
+  app.provisioning_profile = @iPad_provision
   app.codesign_certificate = 'iPhone Developer: Raymond T Hightower (Z9NP4QZ4AE)'
   app.device_family = :ipad
 end

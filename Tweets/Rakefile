@@ -6,4 +6,5 @@ Motion::Project::App.setup do |app|
   app.name = 'Tweets'
   app.provisioning_profile = '/Users/rth/Library/MobileDevice/Provisioning Profiles/24D7E3FB-2D71-4D3E-9809-07ECBE440247.mobileprovision'
   app.codesign_certificate = 'iPhone Developer: Raymond T Hightower (Z9NP4QZ4AE)'
+  app.device_family = :ipad
 end

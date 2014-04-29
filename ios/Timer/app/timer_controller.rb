@@ -14,6 +14,11 @@ class TimerController < UIViewController
     @action.setTitle('Start', forState:UIControlStateNormal)
     @action.setTitle('Stop', forState:UIControlStateSelected)
     @action.addTarget(self, action:'actionTapped', forControlEvents:UIControlEventTouchUpInside)
+
+    Motion::Layout.new do |layout|
+      layout.view view
+      layout.subviews "state" => @state, "action" => @action
+    end
   end
 
   def actionTapped

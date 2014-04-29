@@ -18,6 +18,10 @@ class TimerController < UIViewController
     Motion::Layout.new do |layout|
       layout.view view
       layout.subviews "state" => @state, "action" => @action
+      layout.metrics "margin" => 20, "height"  => 40
+      layout.vertical "|-(>=margin)-[state]-margin-[action]-(>=margin)-|"
+      layout.horizontal "|-margin-[state]-margin-|"
+      layout.horizontal "|-margin-[action]-margin-|"
     end
   end
 

@@ -5,7 +5,7 @@ class TimerController < UIViewController
     margin = 20
 
     @state = UILabel.new
-    @state.font = UIFont.systemFontOfSize(30)
+    @state.font = UIFont.systemFontOfSize(50)
     @state.text = 'Tap to start'
     @state.textAlignment = UITextAlignmentCenter
     @state.textColor = UIColor.whiteColor
